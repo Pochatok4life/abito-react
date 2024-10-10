@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.btn {
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+}
+
+.btn-primary {
+  background-color: rgb(37, 110, 235);
+  color: white;
+}
+
+.search {
+  margin-bottom: 45px;
+}
+
+.search-box {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(37, 110, 235);
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-box input {
+  flex-grow: 1;
+  padding: 14px 22px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  min-width: 0;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+}
+
+.search-btn .search-btn__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.search-btn .search-btn__text {
+  margin-left: 5px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.search-box input::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: grey;
+}
+
+.content {
+  padding-bottom: 68px;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.content-main {
+  flex-grow: 1;
+}
+
+.content-side {
+  min-width: 231px;
+}
+
+.content-main__title {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.content-main__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.content-side__title {
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.content-side__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-product {
+  display: flex;
+  flex-grow: 1;
+  gap: 30px;
+}
+
+.content-product__description {
+  flex-basis: 50%;
+}
+
+.content-product__info {
+  flex-basis: 50%;
+}
+
+.content-product__title,
+.content-product__price {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.content-product__img {
+  width: 100%;
+}
+
+.content-product__text {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.btn-product {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 19px 71px;
+}
+
+.error-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.go-home__btn {
+  width: 230px;
+  align-self: center;
+}
+
+.content-of-politic__heading {
+  font-size: 40px;
+}
+
+.content-of-politic__content {
+  background-color: #F4F5F6;
+  border-radius: 20px;
+  padding: 10px 56px 18px 32px;
+  width: 100%;
+}
+
+.content-of-politic__content h4 {
+  padding-left: 22px;
+  font-size: 20px;
+}
+
+.content-of-politic__content-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.politic-main__heading {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.politic-main__text {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.politic-main__list-item {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 930px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 730px;
+  }
+
+  .content-box {
+    flex-direction: column;
+  }
+
+  .content-main {
+    width: 100%;
+  }
+
+  .content-side {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .content-product {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content-product__description {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .content-product__info {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 786px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .search-btn .search-btn__text {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-side__footer {
+    justify-content: flex-end;
+  }
+
+  .content {
+    padding-bottom: 21px;
+  }
+}
